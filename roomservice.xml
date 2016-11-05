@@ -34,6 +34,8 @@
 <project path="external/libnl" name="Inventor1938/external_libnl" groups="pdk" remote="github" revision="n-7" />
 <remove-project name="CyanogenMod/android_external_toybox" />
 <project path="external/toybox" name="Inventor1938/android_external_toybox" groups="pdk" remote="github" revision="n-7" />
+<!-- <remove-project name="platform/external/speex" groups="pdk" />
+<project path="external/speex" name="Inventor1938/external_speex" groups="pdk" remote="github" revision="n-7" /> -->
 
 
 <remove-project name="CyanogenMod/cm_platform_sdk" />
@@ -41,6 +43,16 @@
 
 <remove-project name="CyanogenMod/android_packages_apps_ThemeChooser" />
 <project path="packages/apps/ThemeChooser" name="Inventor1938/android_packages_apps_ThemeChooser" remote="github" revision="n-7" />
+
+  <remove-project name="CyanogenMod/android_hardware_qcom_audio" />
+  <project path="hardware/qcom/audio/default" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8996" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="CyanogenMod/android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="cm-14.1-caf-8996" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_display" />
+  <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8996" />
+  <project path="hardware/qcom/display-caf/msm8996" name="CyanogenMod/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="cm-14.1-caf-8996" />
+  <remove-project name="CyanogenMod/android_hardware_qcom_media" />
+  <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8996" />
+  <project path="hardware/qcom/media-caf/msm8996" name="CyanogenMod/android_hardware_qcom_media" groups="qcom" revision="cm-14.1-caf-8996" />
 
 
 

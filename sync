@@ -1,0 +1,53 @@
+#!/bin/bash
+echo "Fetching project build"
+cd ~/android/build
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project device/oneplus/oneplus3"
+cd ~/android/device/oneplus/oneplus3
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project device/qcom/common"
+cd ~/android/device/qcom/common
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project kernel/oneplus/msm8996"
+cd ~/android/kernel/oneplus/msm8996
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project frameworks/base"
+cd ~/android/frameworks/base
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project dalvik"
+cd ~/android/dalvik
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project bionic"
+cd ~/android/bionic
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project external/e2fsprogs"
+cd ~/android/external/e2fsprogs
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project external/toybox"
+cd ~/android/external/toybox
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project vendor/cmsdk"
+cd ~/android/vendor/cmsdk
+git fetch upstream
+git merge upstream/cm-14.1
+echo "Fetching project external/libnl"
+cd ~/android/external/libnl
+git fetch aosp
+git merge aosp/master
+echo "Fetching project external/speex"
+cd ~/android/external/speex
+git fetch aosp
+git merge aosp/master
+echo "Fetching project packages/apps/ThemeChooser"
+cd ~/android/packages/apps/ThemeChooser
+git fetch upstream
+git merge upstream/cm-14.1
